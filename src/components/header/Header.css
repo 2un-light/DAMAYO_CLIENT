@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'RixInooAriDuriR';
+  src: url('../fonts/RixInooAriDuri\ Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #2268FC;
+}
+  
+.logo {
+font-family: 'RixInooAriDuriR';
+font-size: 2em;
+color: #fff;
+margin-left: 50px;
+}
+
+.auth-buttons {
+display: flex;
+gap: 10px;
+margin-right: 50px;
+}
+
+.auth-buttons .sign-in,
+.auth-buttons .create-account {
+padding: 10px 20px;
+font-size: 1em;
+font-weight: bold;
+border: 2px solid #fff;
+border-radius: 25px;
+color: #2268FC;
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-buttons .sign-in {
+background-color: #2268FC;
+color: #fff;
+margin-right: 20px;
+}
+
+.auth-buttons .create-account {
+background-color: #2268FC;
+color: #fff;
+}
+
+.auth-buttons .sign-in:hover,
+.auth-buttons .create-account:hover {
+  background-color: #ffffff;
+  color: #2268FC;
+}
