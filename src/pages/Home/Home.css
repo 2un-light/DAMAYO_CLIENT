@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: url('../../components/fonts/NanumGothic-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../components/fonts/NotoSansKR.ttf');
+}
+
+.home {
+  margin: 0;
+  padding: 0;
+  background-color: #2268FC;
+  }
+  
+ .content {
+  margin-top : 100px;
+  display: flex;
+  height : 80vh;
+  
+ }
+
+.left-content {
+  flex: 2;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 270px;
+}
+
+.text-block {
+  margin-bottom: 20px;
+}
+
+.text-block h2 {
+  font-size: 2.5rem;
+  font-family: "Nanum Gothic";
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.text-block p {
+  font-size: 1.1rem;
+  font-family: "Noto Sans KR";
+  color: #fff;
+}
+
+.start-button {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #2268FC;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Nanum Gothic";
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin-top: 20px;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.start-button:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #fc5959;
+  border-radius: 40px;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.start-button:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.start-button:hover {
+  background-color: #fc5959;
+  color: #FFFFFF;
+  transition: background-color 500ms cubic-bezier(.694, 0, 0.335, 1), color 500ms cubic-bezier(.694, 0, 0.335, 1);
+}
+
+.start-button:after {
+  background-color: #FFFFFF;
+}
+
+.start-button span {
+  z-index: 1;
+  position: relative;
+}
+
+.right-content {
+  flex: 1;
+  margin-right: 150px;
+}
+
+.gif-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gif {
+  max-width: 100%;
+}
