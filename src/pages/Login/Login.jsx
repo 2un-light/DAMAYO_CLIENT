@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Login.css';
-import '../../components/footer/Footer.jsx';
 import Footer from '../../components/footer/Footer.jsx';
 import {useNavigate} from 'react-router-dom';
 import axios from 'axios';
@@ -24,10 +23,6 @@ function Login() {
     }
 
     const onClickLogin = () => {
-        console.log("click login")
-        console.log("Email", inputEmail)
-        console.log("Password", inputPassword)
-
         axios.post("http://localhost:8080/members/sign-in",{
             email: inputEmail,
             password: inputPassword
