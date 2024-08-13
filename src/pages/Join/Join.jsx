@@ -55,8 +55,9 @@ function Join () {
         })
         .then((res) => {
             console.log(res);
-            if(res.data.status == "SUCCESS"){
+            if(res.data.code == 200 && res.data.code < 300){
                 alert("회원가입에 성공하였습니다.")
+                document.location.href = "/";
             }
         })
         .catch((error) => {
