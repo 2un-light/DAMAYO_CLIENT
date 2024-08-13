@@ -29,7 +29,7 @@ function Login() {
         })
         .then((res) => {
             console.log(res);
-            if(res.data.status == "SUCCESS"){
+            if(res.data.code == 200 && res.data.code < 300){
                 alert("로그인에 성공하였습니다.");
                 document.location.href = "/";
             }
